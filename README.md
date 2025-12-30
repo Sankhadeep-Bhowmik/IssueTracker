@@ -123,3 +123,30 @@ Understanding Firebase environment variable handling in Vite and Vercel.
 Ensuring the UI remained consistent when integrating new logic.
 
 Designing similar issue detection without over-engineering the solution.
+
+
+
+🔮 What I Would Improve Next
+
+
+If given more time, I would make the following improvements to enhance the application:
+
+
+Advanced Issue Similarity Detection
+Improve the current title-based matching by using keyword extraction or fuzzy matching to detect similar issues more accurately.
+
+
+Strict Status Workflow Enforcement
+Enforce proper status transitions such as Open → In Progress → Done to better reflect real-world issue lifecycles.
+
+
+Filtering and Search
+Add filters for issue status and priority, along with a search feature to quickly find specific issues.
+
+
+Role-Based Access Control
+Introduce roles like Admin and User to control who can assign issues or change statuses.
+
+
+UI/UX Enhancements
+Add loading indicators, empty-state messages, and confirmation modals to improve overall user experience.
