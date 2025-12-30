@@ -15,7 +15,7 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/dashboard"); // ✅ redirect on success
+      navigate("/dashboard"); 
     } catch (err) {
       if (err.code === "auth/user-not-found") {
         setError("User not registered. Please sign up.");

@@ -19,7 +19,7 @@ const CreateIssue = () => {
   const [assignedTo, setAssignedTo] = useState("");
   const [error, setError] = useState("");
 
-  // 🔍 CHECK FOR SIMILAR ISSUES
+
   const checkSimilarIssues = async (newTitle) => {
     const q = query(collection(db, "issues"));
     const snapshot = await getDocs(q);
@@ -51,7 +51,7 @@ const CreateIssue = () => {
     }
 
     try {
-      // 🔍 SIMILAR ISSUE HANDLING
+      
       const hasSimilarIssue = await checkSimilarIssues(title);
 
       if (hasSimilarIssue) {
@@ -64,7 +64,7 @@ const CreateIssue = () => {
         }
       }
 
-      // ✅ CREATE ISSUE IN FIRESTORE
+      
       await addDoc(collection(db, "issues"), {
         title,
         description,
@@ -75,7 +75,7 @@ const CreateIssue = () => {
         createdBy: user.email,
       });
 
-      // 🔄 RESET FORM
+      
       setTitle("");
       setDescription("");
       setPriority("Low");
