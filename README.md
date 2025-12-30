@@ -1,5 +1,6 @@
 Core Features Implemented
 
+
 1️⃣ Create Issue
 
 Each issue contains the following fields:
@@ -18,6 +19,7 @@ Created Time (Firestore timestamp)
 
 Created By (logged-in user’s email)
 
+
 2️⃣ Similar Issue Detection
 
 To avoid duplicate issues:
@@ -30,6 +32,7 @@ If a similar issue exists, the user is shown a confirmation warning and can choo
 
 This approach keeps the solution simple while still being practical and user-friendly.
 
+
 3️⃣ Issue List
 
 All issues are fetched from Firestore in real time.
@@ -37,6 +40,7 @@ All issues are fetched from Firestore in real time.
 Issues are displayed in newest-first order.
 
 Each issue card shows key details such as title, priority, status, and assignee.
+
 
 4️⃣ UI & UX
 
@@ -46,10 +50,12 @@ Clean form layout for issue creation.
 
 Error messages are shown clearly for validation and authentication issues.
 
+
 🗂️ Firestore Data Structure
 Collection: issues
 
 Each document in the issues collection has the following structure:
+
 
 {
   "title": "Login page error",
@@ -62,17 +68,25 @@ Each document in the issues collection has the following structure:
 }
 
 
+
 This structure is simple, scalable, and easy to query.
+
+
 
 ⚙️ Environment Variables
 
 Firebase configuration is handled using environment variables:
 
 VITE_FIREBASE_API_KEY
+
 VITE_FIREBASE_AUTH_DOMAIN
+
 VITE_FIREBASE_PROJECT_ID
+
 VITE_FIREBASE_STORAGE_BUCKET
+
 VITE_FIREBASE_MESSAGING_SENDER_ID
+
 VITE_FIREBASE_APP_ID
 
 
